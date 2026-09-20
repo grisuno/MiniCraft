@@ -10,3 +10,6 @@ Licencia: GPL v3
 
 Descripción:  
 """
+import os
+
+os.system("make && ./minicraft")
