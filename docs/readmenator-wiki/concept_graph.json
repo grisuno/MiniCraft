@@ -1,0 +1,1288 @@
+{
+  "concepts": [
+    {
+      "name": "sys",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 107,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "load",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 11,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "max",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 11,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "raw",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 10,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "kbd",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 8,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "pcspk",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 7,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "set",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 7,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "spawn",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "time",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 5,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "backbuf",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "frame",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "open",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "title",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "dir",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "getc",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "mouse",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "palette",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "poll",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "present",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "version",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "window",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "zoom",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "height",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "kernel",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "mini",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "mode",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "read",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "top",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "vga",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "yield",
+      "files": [
+        "minicraft.c",
+        "minios_abi.h"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "relations": [
+    {
+      "source": "backbuf",
+      "target": "dir",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "dir",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "frame",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "frame",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "getc",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "getc",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "height",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "height",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "kbd",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "kbd",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "kernel",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "kernel",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "load",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "load",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "max",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "max",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "mini",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "mini",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "mode",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "mode",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "mouse",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "mouse",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "open",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "open",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "palette",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "palette",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "pcspk",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "pcspk",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "poll",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "poll",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "present",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "present",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "raw",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "raw",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "read",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "read",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "spawn",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "spawn",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "sys",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "sys",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "time",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "time",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "title",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "title",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "top",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "top",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "version",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "version",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "vga",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "vga",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "window",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "window",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "yield",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "yield",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "zoom",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "backbuf",
+      "target": "zoom",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "backbuf",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "backbuf",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "frame",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "frame",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "getc",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "getc",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "height",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "height",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "kbd",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "kbd",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "kernel",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "kernel",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "load",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "load",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "max",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "max",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "mini",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "mini",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "mode",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "mode",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "mouse",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "mouse",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "open",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "open",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "palette",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "palette",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "pcspk",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "pcspk",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "poll",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "poll",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "present",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "present",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "raw",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "raw",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "read",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "read",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "set",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "set",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "spawn",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "spawn",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "sys",
+      "verb": "consumes",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "sys",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "minicraft.c->minios_abi.h"
+      ]
+    }
+  ],
+  "dialectic": [
+    "Thesis: `backbuf` centralizes 2 files; Antithesis: `dir` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `consumes` explicit?",
+    "Thesis: `backbuf` centralizes 2 files; Antithesis: `frame` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `consumes` explicit?",
+    "Thesis: `backbuf` centralizes 2 files; Antithesis: `getc` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `consumes` explicit?",
+    "Thesis: `backbuf` centralizes 2 files; Antithesis: `height` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `consumes` explicit?",
+    "Thesis: `backbuf` centralizes 2 files; Antithesis: `kbd` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `consumes` explicit?",
+    "Thesis: `backbuf` centralizes 2 files; Antithesis: `kernel` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `consumes` explicit?",
+    "Thesis: `backbuf` centralizes 2 files; Antithesis: `load` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `consumes` explicit?",
+    "Thesis: `backbuf` centralizes 2 files; Antithesis: `max` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `consumes` explicit?",
+    "Thesis: `backbuf` centralizes 2 files; Antithesis: `mini` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `consumes` explicit?",
+    "Thesis: `backbuf` centralizes 2 files; Antithesis: `mode` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `consumes` explicit?"
+  ]
+}

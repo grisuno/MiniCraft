@@ -1,0 +1,395 @@
+# Subsystem: root
+
+## app.py
+- Doc: Autor: Gris Iscomeback Correo electrónico: grisiscomeback[at]gmail[dot]com Fecha de creación...
+- Layer: utility
+- Language: py
+
+## install.sh
+- Layer: utility
+- Language: sh
+
+## minicraft.c
+- Doc: Minecraft-like voxel walker for MiniOS (ring 3, static ELF).
+- Layer: utility
+- Language: c
+- Symbols:
+  - `Recipe` (struct, line 215)
+  - `Pig` (struct, line 294)
+  - `RayHit` (struct, line 1706)
+  - `SaveHeaderV3` (struct, line 2934)
+  - `SaveHeader` (struct, line 2948)
+  - `ChunkHeader` (struct, line 2963)
+  - `best_tool_for` (function, line 230) `static int best_tool_for(unsigned char b)`
+  - `break_time_ms` (function, line 249) `static long break_time_ms(unsigned char b, int tool)`
+  - `break_beep_for` (function, line 274) `static long break_beep_for(unsigned char b)`
+  - `mc_toggle_zoom` (function, line 315) `static void mc_toggle_zoom(void)`
+  - `sdl_poll_events` (function, line 347) `static void sdl_poll_events(void)`
+  - `s_time_ms` (function, line 396) `static long s_time_ms(void)`
+  - `s_kbd` (function, line 399) `static long s_kbd(void)`
+  - `s_kbd_raw` (function, line 406) `static long s_kbd_raw(long on)`
+  - `s_getc_raw` (function, line 414) `static long s_getc_raw(void)`
+  - `ser_get` (function, line 424) `static long ser_get(void)`
+  - `ser_unget` (function, line 437) `static void ser_unget(unsigned char b)`
+  - `menu_ser_key` (function, line 442) `static long menu_ser_key(long b)`
+  - `kbd_drain` (function, line 479) `static void kbd_drain(void)`
+  - `s_vga` (function, line 484) `static long s_vga(long on)`
+  - `s_pal` (function, line 485) `static long s_pal(const unsigned char *p)`
+  - `s_present` (function, line 488) `static long s_present(void)`
+  - `s_title` (function, line 502) `static long s_title(const char *t)`
+  - `s_mouse` (function, line 503) `static long s_mouse(int *m)`
+  - `s_zoom` (function, line 511) `static long s_zoom(long on)`
+  - `s_yield` (function, line 512) `static void s_yield(void)`
+  - `s_pcspk_init` (function, line 513) `static long s_pcspk_init(void)`
+  - `__attribute__` (function, line 514) `static long __attribute__((unused)) s_tone(long f)`
+  - `beep` (function, line 515) `static void beep(long freq, long dur_ms)`
+  - `sdl_init_window` (function, line 533) `static void sdl_init_window(void)`
+  - `pal_set` (function, line 556) `static void pal_set(int i, int r, int g, int b)`
+  - `build_palette` (function, line 562) `static void build_palette(void)`
+  - `in_world` (function, line 621) `static int in_world(int x, int y, int z)`
+  - `chunk_of` (function, line 636) `static int chunk_of(int v)`
+  - `chunk_local` (function, line 640) `static int chunk_local(int v)`
+  - `chunk_lidx` (function, line 645) `static int chunk_lidx(int lx, int ly, int z)`
+  - `chunk_find` (function, line 651) `static int chunk_find(int cx, int cy)`
+  - `world_max_recompute` (function, line 665) `static void world_max_recompute(void)`
+  - `chunk_evict_slot` (function, line 674) `static int chunk_evict_slot(int cx, int cy)`
+  - `chunk_ensure` (function, line 694) `static int chunk_ensure(int cx, int cy)`
+  - `chunk_build_meta` (function, line 717) `static void chunk_build_meta(int slot)`
+  - `col_recompute` (function, line 762) `static void col_recompute(int x, int y)`
+  - `col_top_at` (function, line 787) `static int col_top_at(int x, int y)`
+  - `light_recompute_col` (function, line 794) `static void light_recompute_col(int x, int y)`
+  - `get_b` (function, line 823) `static unsigned char get_b(int x, int y, int z)`
+  - `set_b` (function, line 833) `static void set_b(int x, int y, int z, unsigned char b)`
+  - `set_b_raw` (function, line 849) `static void set_b_raw(int x, int y, int z, unsigned char b)`
+  - `sky_light` (function, line 860) `static float sky_light(int x, int y, int z)`
+  - `is_solid` (function, line 870) `static int is_solid(unsigned char b)`
+  - `in_water_at` (function, line 873) `static int in_water_at(float x, float y, float z)`
+  - `is_visible` (function, line 878) `static int is_visible(unsigned char b)`
+  - `hash2` (function, line 882) `static unsigned int hash2(int x, int y)`
+  - `hash2_seed` (function, line 889) `static unsigned int hash2_seed(int x, int y, unsigned int seed)`
+  - `mc_smoothstep` (function, line 898) `static float mc_smoothstep(float t)`
+  - `biome_fdiv` (function, line 905) `static int biome_fdiv(int v, int c)`
+  - `voro_site` (function, line 920) `static void voro_site(int cx, int cy, unsigned int seed, int cell,
+    int *sx, int *sy)`
+  - `biome_voro` (function, line 928) `static int biome_voro(int x, int y, unsigned int seed, int cell,
+    int ox, int oy, unsigned int...`
+  - `biome_desert` (function, line 952) `static int biome_desert(int x, int y, unsigned int seed)`
+  - `biome_snow` (function, line 956) `static int biome_snow(int x, int y, unsigned int seed)`
+  - `is_cave` (function, line 960) `static int is_cave(int x, int y, int z, unsigned int seed)`
+  - `ground_h_seed` (function, line 968) `static int ground_h_seed(int x, int y, unsigned int seed)`
+  - `inv_add` (function, line 990) `static int inv_add(int b, int n)`
+  - `inv_remove` (function, line 1004) `static int inv_remove(int b, int n)`
+  - `decorate_column` (function, line 1054) `static void decorate_column(int x, int y, unsigned int seed)`
+  - `gen_terrain_chunk` (function, line 1093) `static void gen_terrain_chunk(int slot)`
+  - `decorate_chunk` (function, line 1102) `static void decorate_chunk(int slot)`
+  - `ensure_around_px` (function, line 1115) `static void ensure_around_px(float px, float py)`
+  - `ensure_around` (function, line 1149) `static void ensure_around(void)`
+  - `new_world` (function, line 1154) `static void new_world(unsigned int seed)`
+  - `mob_spawn_one` (function, line 1250) `static void mob_spawn_one(Pig *m, int id, int hp, long now)`
+  - `pig_collides` (function, line 1302) `static int pig_collides(float x, float y, float z)`
+  - `creeper_explode` (function, line 1316) `static void creeper_explode(Pig *c, long now)`
+  - `creep_sense` (function, line 1384) `static void creep_sense(Pig *c, float *pdx, float *pdy, float *pdz, float *pd3)`
+  - `creep_has_los` (function, line 1396) `static int creep_has_los(Pig *c)`
+  - `creep_separate` (function, line 1420) `static void creep_separate(Pig *p, int id, float dt)`
+  - `tick_mob` (function, line 1445) `static void tick_mob(Pig *p, int id, float dt, long now)`
+  - `tick_pigs` (function, line 1568) `static void tick_pigs(float dt, long now)`
+  - `face_color` (function, line 1576) `static unsigned char face_color(unsigned char b, int face)`
+  - `sky_color` (function, line 1625) `static unsigned char sky_color(float dz, float sun_dot, int x, int y, float tsec)`
+  - `shade_block` (function, line 1658) `static unsigned char shade_block(unsigned char b, int face, int bx, int by, int bz,
+             ...`
+  - `cast_ray` (function, line 1715) `static RayHit cast_ray(float ox, float oy, float oz, float dx, float dy, float dz, float maxd)`
+  - `eye_z` (function, line 1806) `static float eye_z(void)`
+  - `mc_glyph` (function, line 1873) `static int mc_glyph(char ch)`
+  - `mc_pixel` (function, line 1881) `static void mc_pixel(int x, int y, unsigned char c)`
+  - `mc_text` (function, line 1887) `static void mc_text(int x, int y, const char *s, unsigned char fg)`
+  - `mc_text_bg` (function, line 1900) `static void mc_text_bg(int x, int y, const char *s, unsigned char fg, unsigned char bg)`
+  - `mc_block_name` (function, line 1913) `static const char *mc_block_name(unsigned char b)`
+  - `mc_facing` (function, line 1933) `static char mc_facing(void)`
+  - `cam_build` (function, line 1948) `static void cam_build(void)`
+  - `render_terrain` (function, line 1966) `static void render_terrain(RayHit tgt, float cyaw, float syaw, float cpit,
+                      ...`
+  - `mob_pixel` (function, line 2001) `static unsigned char mob_pixel(Pig *m, int id, int px, int py, int x0, int x1, int y0, int y1)`
+  - `render_mob_array` (function, line 2035) `static void render_mob_array(Pig *arr, int n, float fx, float fy, float fz,
+    float rx, float r...`
+  - `render_pigs` (function, line 2086) `static void render_pigs(float cyaw, float syaw, float cpit, float spit, float ez)`
+  - `render_frame` (function, line 2094) `static void render_frame(void)`
+  - `sc_hist_push` (function, line 2207) `static void sc_hist_push(unsigned char b)`
+  - `poll_kbd` (function, line 2218) `static void poll_kbd(void)`
+  - `player_collides` (function, line 2411) `static int player_collides(float x, float y, float z)`
+  - `move_x` (function, line 2435) `static void move_x(float nx)`
+  - `move_y` (function, line 2440) `static void move_y(float ny)`
+  - `move_z_abs` (function, line 2445) `static MoveResult move_z_abs(float nz)`
+  - `block_intersects_player` (function, line 2460) `static int block_intersects_player(int bx, int by, int bz)`
+  - `try_autostep` (function, line 2469) `static void try_autostep(float tx, float ty)`
+  - `hurt` (function, line 2480) `static void hurt(int dmg, const char *why)`
+  - `tick_player` (function, line 2505) `static void tick_player(float dt)`
+  - `tick_water` (function, line 2604) `static void tick_water(long now)`
+  - `tick_hunger` (function, line 2652) `static void tick_hunger(long now)`
+  - `goal_text` (function, line 2664) `static const char *goal_text(void)`
+  - `tick_goals` (function, line 2675) `static void tick_goals(void)`
+  - `tick_discover` (function, line 2686) `static void tick_discover(long now)`
+  - `tick_interact` (function, line 2724) `static void tick_interact(void)`
+  - `mc_crc32` (function, line 2975) `static uint32_t mc_crc32(const void *data, size_t len, uint32_t crc)`
+  - `save_compute_crc` (function, line 2988) `static uint32_t save_compute_crc(const SaveHeader *hd)`
+  - `chunk_path` (function, line 2994) `static void chunk_path(int cx, int cy, char *out, size_t n)`
+  - `save_chunk_file` (function, line 2998) `static int save_chunk_file(int slot)`
+  - `load_chunk_file` (function, line 3030) `static int load_chunk_file(int slot, int cx, int cy)`
+  - `save_validate_loaded` (function, line 3112) `static int save_validate_loaded(void)`
+  - `load_reset_runtime` (function, line 3131) `static void load_reset_runtime(void)`
+  - `carve_blob` (function, line 3164) `static void carve_blob(const unsigned char *blob)`
+  - `load_world_legacy` (function, line 3193) `static int load_world_legacy(FILE *f)`
+  - `load_apply_player` (function, line 3231) `static void load_apply_player(const SaveHeader *hd)`
+  - `load_world_v3` (function, line 3250) `static int load_world_v3(FILE *f, SaveHeader *hd)`
+  - `load_world_v2` (function, line 3290) `static int load_world_v2(FILE *f, SaveHeader *hd)`
+  - `load_world` (function, line 3327) `static int load_world(void)`
+  - `selftest` (function, line 3401) `static int selftest(void)`
+  - `census` (function, line 3662) `static int census(void)`
+  - `dumpstats` (function, line 3726) `static int dumpstats(void)`
+  - `title_menu` (function, line 3810) `static int title_menu(int have_save, int *seed_io)`
+  - `pause_menu` (function, line 3978) `static int pause_menu(int *seed_io)`
+  - `main` (function, line 4151) `int main(int argc, char **argv)`
+  - `save_world` (function, line 329) `static int save_world(void);`
+  - `MC_H` (macro, line 38) `#define MC_H`
+  - `MC_CHUNK` (macro, line 39) `#define MC_CHUNK`
+  - `MC_LOAD_R` (macro, line 40) `#define MC_LOAD_R`
+  - `MC_CHUNKS` (macro, line 41) `#define MC_CHUNKS`
+  - `MC_CVOL` (macro, line 42) `#define MC_CVOL`
+  - `MC_COLS` (macro, line 43) `#define MC_COLS`
+  - `FB_W` (macro, line 45) `#define FB_W`
+  - `FB_H` (macro, line 46) `#define FB_H`
+  - `BACKBUF` (macro, line 49) `#define BACKBUF`
+  - `BACKBUF` (macro, line 51) `#define BACKBUF`
+  - `MC_SAVES_DIR` (macro, line 55) `#define MC_SAVES_DIR`
+  - `MC_SAVES_DIR` (macro, line 57) `#define MC_SAVES_DIR`
+  - `SAVE_PATH` (macro, line 59) `#define SAVE_PATH`
+  - `SAVE_TMP_PATH` (macro, line 60) `#define SAVE_TMP_PATH`
+  - `MC_SAVE_MAGIC` (macro, line 61) `#define MC_SAVE_MAGIC`
+  - `MC_SAVE_VERSION` (macro, line 62) `#define MC_SAVE_VERSION`
+  - `MC_SAVE_CRC_SEED` (macro, line 63) `#define MC_SAVE_CRC_SEED`
+  - `MC_CHUNK_MAGIC` (macro, line 64) `#define MC_CHUNK_MAGIC`
+  - `MC_CHUNK_VERSION` (macro, line 65) `#define MC_CHUNK_VERSION`
+  - `MC_EYE` (macro, line 68) `#define MC_EYE`
+  - `MC_GRAV` (macro, line 69) `#define MC_GRAV`
+  - `MC_JUMP` (macro, line 70) `#define MC_JUMP`
+  - `MC_MAXFALL` (macro, line 71) `#define MC_MAXFALL`
+  - `MC_SPEED` (macro, line 72) `#define MC_SPEED`
+  - `MC_FLY_SPEED` (macro, line 73) `#define MC_FLY_SPEED`
+  - `MC_SPRINT` (macro, line 74) `#define MC_SPRINT`
+  - `MC_MOUSE` (macro, line 75) `#define MC_MOUSE`
+  - `MC_REACH` (macro, line 76) `#define MC_REACH`
+  - `MC_VIEW` (macro, line 77) `#define MC_VIEW`
+  - `MC_DDA_STEPS` (macro, line 78) `#define MC_DDA_STEPS`
+  - `MC_BREAK_MS` (macro, line 79) `#define MC_BREAK_MS`
+  - `MC_BREAK_GRACE_MS` (macro, line 80) `#define MC_BREAK_GRACE_MS`
+  - `MC_PLACE_MS` (macro, line 81) `#define MC_PLACE_MS`
+  - `MC_WATER_GRAV` (macro, line 82) `#define MC_WATER_GRAV`
+  - `MC_WATER_SINK` (macro, line 83) `#define MC_WATER_SINK`
+  - `MC_WATER_SWIM` (macro, line 84) `#define MC_WATER_SWIM`
+  - `MC_INV_MAX` (macro, line 85) `#define MC_INV_MAX`
+  - `MC_PITCH_MAX` (macro, line 86) `#define MC_PITCH_MAX`
+  - `MC_AUTOSTEP` (macro, line 87) `#define MC_AUTOSTEP`
+  - `MC_HP_MAX` (macro, line 88) `#define MC_HP_MAX`
+  - `MC_PIGS` (macro, line 89) `#define MC_PIGS`
+  - `MC_CREEPS_MAX` (macro, line 90) `#define MC_CREEPS_MAX`
+  - `MC_CREEPS_DEF` (macro, line 91) `#define MC_CREEPS_DEF`
+  - `MC_CREEP_HP` (macro, line 92) `#define MC_CREEP_HP`
+  - `MC_FUSE_MS` (macro, line 93) `#define MC_FUSE_MS`
+  - `MC_BOOM_R` (macro, line 94) `#define MC_BOOM_R`
+  - `MC_CREEP_SENSE` (macro, line 97) `#define MC_CREEP_SENSE`
+  - `MC_CREEP_DZ_MAX` (macro, line 98) `#define MC_CREEP_DZ_MAX`
+  - `MC_CREEP_FUSE_D` (macro, line 99) `#define MC_CREEP_FUSE_D`
+  - `MC_CREEP_DEFUSE_D` (macro, line 100) `#define MC_CREEP_DEFUSE_D`
+  - `MC_CREEP_SEP_D` (macro, line 101) `#define MC_CREEP_SEP_D`
+  - `MC_PORK_HEAL` (macro, line 102) `#define MC_PORK_HEAL`
+  - `MC_HUNGER_MAX` (macro, line 103) `#define MC_HUNGER_MAX`
+  - `MC_HUNGER_MS` (macro, line 104) `#define MC_HUNGER_MS`
+  - `MC_PIG_HP` (macro, line 105) `#define MC_PIG_HP`
+  - `MC_PIG_HURT_MS` (macro, line 106) `#define MC_PIG_HURT_MS`
+  - `MC_DAY_MS` (macro, line 107) `#define MC_DAY_MS`
+  - `MC_SAVE_SECS` (macro, line 108) `#define MC_SAVE_SECS`
+  - `MC_BAYER_N` (macro, line 109) `#define MC_BAYER_N`
+  - `MC_H_BASE` (macro, line 110) `#define MC_H_BASE`
+  - `MC_H_WT_DET` (macro, line 111) `#define MC_H_WT_DET`
+  - `MC_H_WT_MID` (macro, line 112) `#define MC_H_WT_MID`
+  - `MC_H_WT_COARSE` (macro, line 113) `#define MC_H_WT_COARSE`
+  - `SC_ESC` (macro, line 116) `#define SC_ESC`
+  - `SC_1` (macro, line 117) `#define SC_1`
+  - `SC_9` (macro, line 118) `#define SC_9`
+  - `SC_Q` (macro, line 119) `#define SC_Q`
+  - `SC_W` (macro, line 120) `#define SC_W`
+  - `SC_E` (macro, line 121) `#define SC_E`
+  - `SC_R` (macro, line 122) `#define SC_R`
+  - `SC_T` (macro, line 123) `#define SC_T`
+  - `SC_U` (macro, line 124) `#define SC_U`
+  - `SC_I` (macro, line 125) `#define SC_I`
+  - `SC_O` (macro, line 126) `#define SC_O`
+  - `SC_P` (macro, line 127) `#define SC_P`
+  - `SC_J` (macro, line 128) `#define SC_J`
+  - `SC_A` (macro, line 129) `#define SC_A`
+  - `SC_S` (macro, line 130) `#define SC_S`
+  - `SC_D` (macro, line 131) `#define SC_D`
+  - `SC_F` (macro, line 132) `#define SC_F`
+  - `SC_G` (macro, line 133) `#define SC_G`
+  - `SC_K` (macro, line 134) `#define SC_K`
+  - `SC_L` (macro, line 135) `#define SC_L`
+  - `SC_C` (macro, line 136) `#define SC_C`
+  - `SC_V` (macro, line 137) `#define SC_V`
+  - `SC_B` (macro, line 138) `#define SC_B`
+  - `SC_N` (macro, line 139) `#define SC_N`
+  - `SC_ENTER` (macro, line 140) `#define SC_ENTER`
+  - `SC_BACK` (macro, line 141) `#define SC_BACK`
+  - `SC_0` (macro, line 142) `#define SC_0`
+  - `MC_SEED_MAX` (macro, line 143) `#define MC_SEED_MAX`
+  - `MC_KBD_SEQ_SPINS` (macro, line 144) `#define MC_KBD_SEQ_SPINS`
+  - `SC_SPACE` (macro, line 145) `#define SC_SPACE`
+  - `SC_LSHIFT` (macro, line 146) `#define SC_LSHIFT`
+  - `SC_RSHIFT` (macro, line 147) `#define SC_RSHIFT`
+  - `SC_CTRL` (macro, line 148) `#define SC_CTRL`
+  - `EXT_UP` (macro, line 149) `#define EXT_UP`
+  - `EXT_DOWN` (macro, line 150) `#define EXT_DOWN`
+  - `EXT_LEFT` (macro, line 151) `#define EXT_LEFT`
+  - `EXT_RIGHT` (macro, line 152) `#define EXT_RIGHT`
+  - `EXT_F11` (macro, line 153) `#define EXT_F11`
+  - `MOB_PIG` (macro, line 307) `#define MOB_PIG`
+  - `MOB_CREEP` (macro, line 308) `#define MOB_CREEP`
+  - `SER_STASH_CAP` (macro, line 420) `#define SER_STASH_CAP`
+  - `MC_VORO_DESERT_CELL` (macro, line 917) `#define MC_VORO_DESERT_CELL`
+  - `MC_VORO_SNOW_CELL` (macro, line 918) `#define MC_VORO_SNOW_CELL`
+  - `MC_LEGACY_WORLD` (macro, line 2972) `#define MC_LEGACY_WORLD`
+- Depends on: `minios_abi.h`
+
+## minios_abi.h
+- Doc: Single source of truth for the MiniOS user-kernel ABI.
+- Layer: utility
+- Language: h
+- Symbols:
+  - `MINIOS_ABI_H` (macro, line 2) `#define MINIOS_ABI_H`
+  - `MINIOS_ABI_VERSION` (macro, line 41) `#define MINIOS_ABI_VERSION`
+  - `MINIOS_ABI_CHECKSUM` (macro, line 45) `#define MINIOS_ABI_CHECKSUM`
+  - `MINIOS_USER_LOAD_BASE` (macro, line 101) `#define MINIOS_USER_LOAD_BASE`
+  - `MINIOS_USER_LOAD_END` (macro, line 102) `#define MINIOS_USER_LOAD_END`
+  - `MINIOS_USER_STACK_SIZE` (macro, line 103) `#define MINIOS_USER_STACK_SIZE`
+  - `MINIOS_USER_STACK_TOP` (macro, line 104) `#define MINIOS_USER_STACK_TOP`
+  - `MINIOS_USER_STACK_BASE` (macro, line 105) `#define MINIOS_USER_STACK_BASE`
+  - `MINIOS_USER_BRK_END` (macro, line 106) `#define MINIOS_USER_BRK_END`
+  - `MINIOS_DOOM_BACKBUF_ADDR` (macro, line 123) `#define MINIOS_DOOM_BACKBUF_ADDR`
+  - `MINIOS_DOOM_W` (macro, line 124) `#define MINIOS_DOOM_W`
+  - `MINIOS_DOOM_H` (macro, line 125) `#define MINIOS_DOOM_H`
+  - `MINIOS_FB_ADDR` (macro, line 126) `#define MINIOS_FB_ADDR`
+  - `MINIOS_NK_BACKBUF_ADDR` (macro, line 127) `#define MINIOS_NK_BACKBUF_ADDR`
+  - `MINIOS_NK_W` (macro, line 128) `#define MINIOS_NK_W`
+  - `MINIOS_NK_H` (macro, line 129) `#define MINIOS_NK_H`
+  - `MINIOS_HEAP_BASE` (macro, line 134) `#define MINIOS_HEAP_BASE`
+  - `MINIOS_HEAP_SIZE` (macro, line 135) `#define MINIOS_HEAP_SIZE`
+  - `MINIOS_FB_WIDTH_MAX` (macro, line 140) `#define MINIOS_FB_WIDTH_MAX`
+  - `MINIOS_FB_HEIGHT_MAX` (macro, line 141) `#define MINIOS_FB_HEIGHT_MAX`
+  - `MINIOS_SYS_READ` (macro, line 159) `#define MINIOS_SYS_READ`
+  - `MINIOS_SYS_WRITE` (macro, line 160) `#define MINIOS_SYS_WRITE`
+  - `MINIOS_SYS_OPEN` (macro, line 161) `#define MINIOS_SYS_OPEN`
+  - `MINIOS_SYS_CLOSE` (macro, line 162) `#define MINIOS_SYS_CLOSE`
+  - `MINIOS_SYS_FSTAT` (macro, line 163) `#define MINIOS_SYS_FSTAT`
+  - `MINIOS_SYS_POLL` (macro, line 164) `#define MINIOS_SYS_POLL`
+  - `MINIOS_SYS_LSEEK` (macro, line 165) `#define MINIOS_SYS_LSEEK`
+  - `MINIOS_SYS_MMAP` (macro, line 166) `#define MINIOS_SYS_MMAP`
+  - `MINIOS_SYS_MPROTECT` (macro, line 167) `#define MINIOS_SYS_MPROTECT`
+  - `MINIOS_SYS_MUNMAP` (macro, line 168) `#define MINIOS_SYS_MUNMAP`
+  - `MINIOS_SYS_BRK` (macro, line 169) `#define MINIOS_SYS_BRK`
+  - `MINIOS_SYS_RT_SIGACTION` (macro, line 170) `#define MINIOS_SYS_RT_SIGACTION`
+  - `MINIOS_SYS_RT_SIGPROCMASK` (macro, line 171) `#define MINIOS_SYS_RT_SIGPROCMASK`
+  - `MINIOS_SYS_IOCTL` (macro, line 172) `#define MINIOS_SYS_IOCTL`
+  - `MINIOS_SYS_WRITEV` (macro, line 173) `#define MINIOS_SYS_WRITEV`
+  - `MINIOS_SYS_ACCESS` (macro, line 174) `#define MINIOS_SYS_ACCESS`
+  - `MINIOS_SYS_SCHED_YIELD` (macro, line 175) `#define MINIOS_SYS_SCHED_YIELD`
+  - `MINIOS_SYS_GETPID` (macro, line 176) `#define MINIOS_SYS_GETPID`
+  - `MINIOS_SYS_SOCKET` (macro, line 177) `#define MINIOS_SYS_SOCKET`
+  - `MINIOS_SYS_CONNECT` (macro, line 178) `#define MINIOS_SYS_CONNECT`
+  - `MINIOS_SYS_SENDTO` (macro, line 179) `#define MINIOS_SYS_SENDTO`
+  - `MINIOS_SYS_RECVFROM` (macro, line 180) `#define MINIOS_SYS_RECVFROM`
+  - `MINIOS_SYS_SHUTDOWN` (macro, line 181) `#define MINIOS_SYS_SHUTDOWN`
+  - `MINIOS_SYS_FORK` (macro, line 182) `#define MINIOS_SYS_FORK`
+  - `MINIOS_SYS_VFORK` (macro, line 183) `#define MINIOS_SYS_VFORK`
+  - `MINIOS_SYS_EXECVE` (macro, line 184) `#define MINIOS_SYS_EXECVE`
+  - `MINIOS_SYS_EXIT` (macro, line 185) `#define MINIOS_SYS_EXIT`
+  - `MINIOS_SYS_WAIT4` (macro, line 186) `#define MINIOS_SYS_WAIT4`
+  - `MINIOS_SYS_KILL` (macro, line 187) `#define MINIOS_SYS_KILL`
+  - `MINIOS_SYS_UNAME` (macro, line 188) `#define MINIOS_SYS_UNAME`
+  - `MINIOS_SYS_UNLINK` (macro, line 189) `#define MINIOS_SYS_UNLINK`
+  - `MINIOS_SYS_READLINK` (macro, line 190) `#define MINIOS_SYS_READLINK`
+  - `MINIOS_SYS_GETTID` (macro, line 191) `#define MINIOS_SYS_GETTID`
+  - `MINIOS_SYS_FLOCK` (macro, line 195) `#define MINIOS_SYS_FLOCK`
+  - `MINIOS_SYS_FSYNC` (macro, line 196) `#define MINIOS_SYS_FSYNC`
+  - `MINIOS_SYS_FDATASYNC` (macro, line 197) `#define MINIOS_SYS_FDATASYNC`
+  - `MINIOS_SYS_GETCWD` (macro, line 198) `#define MINIOS_SYS_GETCWD`
+  - `MINIOS_SYS_GETTIMEOFDAY` (macro, line 199) `#define MINIOS_SYS_GETTIMEOFDAY`
+  - `MINIOS_SYS_ARCH_PRCTL` (macro, line 200) `#define MINIOS_SYS_ARCH_PRCTL`
+  - `MINIOS_SYS_OPENAT` (macro, line 201) `#define MINIOS_SYS_OPENAT`
+  - `MINIOS_SYS_NEWFSTATAT` (macro, line 202) `#define MINIOS_SYS_NEWFSTATAT`
+  - `MINIOS_SYS_STATX` (macro, line 205) `#define MINIOS_SYS_STATX`
+  - `MINIOS_SYS_SET_ROBUST_LIST` (macro, line 209) `#define MINIOS_SYS_SET_ROBUST_LIST`
+  - `MINIOS_SYS_PRLIMIT64` (macro, line 213) `#define MINIOS_SYS_PRLIMIT64`
+  - `MINIOS_SYS_GETRANDOM` (macro, line 214) `#define MINIOS_SYS_GETRANDOM`
+  - `MINIOS_SYS_RSEQ` (macro, line 215) `#define MINIOS_SYS_RSEQ`
+  - `MINIOS_SYS_EXIT_GROUP` (macro, line 216) `#define MINIOS_SYS_EXIT_GROUP`
+  - `MINIOS_SYS_SET_TID_ADDRESS` (macro, line 217) `#define MINIOS_SYS_SET_TID_ADDRESS`
+  - `MINIOS_SYS_CLOCK_GETTIME` (macro, line 218) `#define MINIOS_SYS_CLOCK_GETTIME`
+  - `MINIOS_SYS_TGKILL` (macro, line 219) `#define MINIOS_SYS_TGKILL`
+  - `MINIOS_SYS_DNS` (macro, line 222) `#define MINIOS_SYS_DNS`
+  - `MINIOS_SYS_TLS_HANDSHAKE` (macro, line 228) `#define MINIOS_SYS_TLS_HANDSHAKE`
+  - `MINIOS_SYS_TLS_SEND` (macro, line 229) `#define MINIOS_SYS_TLS_SEND`
+  - `MINIOS_SYS_TLS_RECV` (macro, line 230) `#define MINIOS_SYS_TLS_RECV`
+  - `MINIOS_SYS_TIME` (macro, line 231) `#define MINIOS_SYS_TIME`
+  - `MINIOS_SYS_KBD` (macro, line 232) `#define MINIOS_SYS_KBD`
+  - `MINIOS_SYS_PALETTE` (macro, line 233) `#define MINIOS_SYS_PALETTE`
+  - `MINIOS_SYS_KBD_RAW` (macro, line 234) `#define MINIOS_SYS_KBD_RAW`
+  - `MINIOS_SYS_VGA_MODE` (macro, line 235) `#define MINIOS_SYS_VGA_MODE`
+  - `MINIOS_SYS_PCSPK_INIT` (macro, line 236) `#define MINIOS_SYS_PCSPK_INIT`
+  - `MINIOS_SYS_PCSPK_TONE` (macro, line 237) `#define MINIOS_SYS_PCSPK_TONE`
+  - `MINIOS_SYS_DOOM_FRAME` (macro, line 238) `#define MINIOS_SYS_DOOM_FRAME`
+  - `MINIOS_SYS_RTC` (macro, line 239) `#define MINIOS_SYS_RTC`
+  - `MINIOS_SYS_FB_INFO` (macro, line 240) `#define MINIOS_SYS_FB_INFO`
+  - `MINIOS_SYS_PCSPK_VOL` (macro, line 241) `#define MINIOS_SYS_PCSPK_VOL`
+  - `MINIOS_SYS_SPAWN` (macro, line 242) `#define MINIOS_SYS_SPAWN`
+  - `MINIOS_SYS_LZ4_COMPRESS` (macro, line 243) `#define MINIOS_SYS_LZ4_COMPRESS`
+  - `MINIOS_SYS_LZ4_DECOMPRESS` (macro, line 244) `#define MINIOS_SYS_LZ4_DECOMPRESS`
+  - `MINIOS_SYS_MOUSE` (macro, line 245) `#define MINIOS_SYS_MOUSE`
+  - `MINIOS_SYS_NK_FRAME` (macro, line 246) `#define MINIOS_SYS_NK_FRAME`
+  - `MINIOS_SYS_SB16_OPEN` (macro, line 247) `#define MINIOS_SYS_SB16_OPEN`
+  - `MINIOS_SYS_SB16_SUBMIT` (macro, line 248) `#define MINIOS_SYS_SB16_SUBMIT`
+  - `MINIOS_SYS_GFX_SET_TITLE` (macro, line 249) `#define MINIOS_SYS_GFX_SET_TITLE`
+  - `MINIOS_SYS_SB16_PUMP` (macro, line 250) `#define MINIOS_SYS_SB16_PUMP`
+  - `MINIOS_SYS_SB16_STREAM_OPEN` (macro, line 251) `#define MINIOS_SYS_SB16_STREAM_OPEN`
+  - `MINIOS_SYS_SB16_STREAM_CLOSE` (macro, line 252) `#define MINIOS_SYS_SB16_STREAM_CLOSE`
+  - `MINIOS_SYS_SB16_STREAM_SUBMIT` (macro, line 253) `#define MINIOS_SYS_SB16_STREAM_SUBMIT`
+  - `MINIOS_SYS_SB16_STREAM_VOLUME` (macro, line 254) `#define MINIOS_SYS_SB16_STREAM_VOLUME`
+  - `MINIOS_SYS_THREAD_SPAWN` (macro, line 255) `#define MINIOS_SYS_THREAD_SPAWN`
+  - `MINIOS_SYS_FUTEX_WAIT` (macro, line 256) `#define MINIOS_SYS_FUTEX_WAIT`
+  - `MINIOS_SYS_FUTEX_WAKE` (macro, line 257) `#define MINIOS_SYS_FUTEX_WAKE`
+  - `MINIOS_SYS_SUBMIT_BATCH` (macro, line 258) `#define MINIOS_SYS_SUBMIT_BATCH`
+  - `MINIOS_SYS_GETC_RAW` (macro, line 259) `#define MINIOS_SYS_GETC_RAW`
+  - `MINIOS_SYS_GFX_PRESENT` (macro, line 260) `#define MINIOS_SYS_GFX_PRESENT`
+  - `MINIOS_SYS_SECCOMP` (macro, line 261) `#define MINIOS_SYS_SECCOMP`
+  - `MINIOS_SYS_NICE` (macro, line 262) `#define MINIOS_SYS_NICE`
+  - `MINIOS_SYS_RLIMIT` (macro, line 263) `#define MINIOS_SYS_RLIMIT`
+  - `MINIOS_SYS_DIR_LIST` (macro, line 264) `#define MINIOS_SYS_DIR_LIST`
+  - `MINIOS_SYS_GFX_ZOOM` (macro, line 265) `#define MINIOS_SYS_GFX_ZOOM`
+  - `MINIOS_SYS_WL_ATTACH` (macro, line 270) `#define MINIOS_SYS_WL_ATTACH`
+  - `MINIOS_SYS_WL_COMMIT` (macro, line 271) `#define MINIOS_SYS_WL_COMMIT`
+  - `MINIOS_SYS_WL_INPUT` (macro, line 272) `#define MINIOS_SYS_WL_INPUT`
+  - `MINIOS_SYS_CLONE` (macro, line 274) `#define MINIOS_SYS_CLONE`
+  - `MINIOS_GFX_BUF_GAME` (macro, line 282) `#define MINIOS_GFX_BUF_GAME`
+  - `MINIOS_GFX_BUF_NK` (macro, line 283) `#define MINIOS_GFX_BUF_NK`
+  - `MINIOS_SYS_FRAMEBUFFER_COMMIT` (macro, line 284) `#define MINIOS_SYS_FRAMEBUFFER_COMMIT`
+  - `MINIOS_SYS_WINDOW_PRESENT` (macro, line 285) `#define MINIOS_SYS_WINDOW_PRESENT`
+  - `MINIOS_SYS_WINDOW_TITLE` (macro, line 286) `#define MINIOS_SYS_WINDOW_TITLE`
+  - `SYS_TIME_MS` (macro, line 289) `#define SYS_TIME_MS`
+  - `SYS_PALETTE` (macro, line 290) `#define SYS_PALETTE`
+  - `SYS_PCSPK_INIT` (macro, line 291) `#define SYS_PCSPK_INIT`
+  - `SYS_PCSPK_TONE` (macro, line 292) `#define SYS_PCSPK_TONE`
+  - `SYS_RTC` (macro, line 293) `#define SYS_RTC`
+  - `SYS_FB_INFO` (macro, line 294) `#define SYS_FB_INFO`
+  - `SYS_PCSPK_VOL` (macro, line 295) `#define SYS_PCSPK_VOL`
+  - `SYS_SPAWN` (macro, line 296) `#define SYS_SPAWN`
+  - `SYS_TIME` (macro, line 297) `#define SYS_TIME`
+  - `SYS_WRITE` (macro, line 298) `#define SYS_WRITE`
+  - `MINIOS_EABI_MISMATCH` (macro, line 301) `#define MINIOS_EABI_MISMATCH`
+- Imported by: `minicraft.c`

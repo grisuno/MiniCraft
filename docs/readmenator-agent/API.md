@@ -1,0 +1,132 @@
+# API
+
+## minicraft.c
+Depends on: `minios_abi.h`
+- `best_tool_for` (function) `minicraft.c:230` `static int best_tool_for(unsigned char b)`
+- `break_time_ms` (function) `minicraft.c:249` `static long break_time_ms(unsigned char b, int tool)`
+- `break_beep_for` (function) `minicraft.c:274` `static long break_beep_for(unsigned char b)`
+- `mc_toggle_zoom` (function) `minicraft.c:315` `static void mc_toggle_zoom(void)`
+- `save_world` (function) `minicraft.c:329` `static int save_world(void);`
+- `sdl_poll_events` (function) `minicraft.c:347` `static void sdl_poll_events(void)`
+- `s_time_ms` (function) `minicraft.c:396` `static long s_time_ms(void)`
+- `s_kbd` (function) `minicraft.c:399` `static long s_kbd(void)`
+- `s_kbd_raw` (function) `minicraft.c:406` `static long s_kbd_raw(long on)`
+- `s_getc_raw` (function) `minicraft.c:414` `static long s_getc_raw(void)` -- Serial fallback for menus: SYS_KBD in raw mode carries PS/2 only, so a serial console can never drive a scancode...
+- `ser_get` (function) `minicraft.c:424` `static long ser_get(void)`
+- `ser_unget` (function) `minicraft.c:437` `static void ser_unget(unsigned char b)`
+- `menu_ser_key` (function) `minicraft.c:442` `static long menu_ser_key(long b)`
+- `kbd_drain` (function) `minicraft.c:479` `static void kbd_drain(void)` -- Drain stale scancodes (typematic repeats, a release that arrived with * its press) before leaving a menu, so they...
+- `s_vga` (function) `minicraft.c:484` `static long s_vga(long on)`
+- `s_pal` (function) `minicraft.c:485` `static long s_pal(const unsigned char *p)`
+- `s_present` (function) `minicraft.c:488` `static long s_present(void)`
+- `s_title` (function) `minicraft.c:502` `static long s_title(const char *t)`
+- `s_mouse` (function) `minicraft.c:503` `static long s_mouse(int *m)`
+- `s_zoom` (function) `minicraft.c:511` `static long s_zoom(long on)`
+- `s_yield` (function) `minicraft.c:512` `static void s_yield(void)`
+- `s_pcspk_init` (function) `minicraft.c:513` `static long s_pcspk_init(void)`
+- `beep` (function) `minicraft.c:515` `static void beep(long freq, long dur_ms)`
+- `sdl_init_window` (function) `minicraft.c:533` `static void sdl_init_window(void)`
+- `pal_set` (function) `minicraft.c:556` `static void pal_set(int i, int r, int g, int b)`
+- `build_palette` (function) `minicraft.c:562` `static void build_palette(void)`
+- `in_world` (function) `minicraft.c:621` `static int in_world(int x, int y, int z)`
+- `chunk_of` (function) `minicraft.c:636` `static int chunk_of(int v)` -- (void)x; (void)y; return z >= 0 && z < MC_H; } static unsigned int hash2(int x, int y); static unsigned int...
+- `chunk_local` (function) `minicraft.c:640` `static int chunk_local(int v)`
+- `chunk_lidx` (function) `minicraft.c:645` `static int chunk_lidx(int lx, int ly, int z)`
+- `chunk_find` (function) `minicraft.c:651` `static int chunk_find(int cx, int cy)` -- O(1) fast path: DDA walks neighbours, so the last chunk almost always * hits; the 49-slot scan is the rare slow...
+- `world_max_recompute` (function) `minicraft.c:665` `static void world_max_recompute(void)`
+- `chunk_evict_slot` (function) `minicraft.c:674` `static int chunk_evict_slot(int cx, int cy)`
+- `chunk_ensure` (function) `minicraft.c:694` `static int chunk_ensure(int cx, int cy)`
+- `chunk_build_meta` (function) `minicraft.c:717` `static void chunk_build_meta(int slot)`
+- `col_recompute` (function) `minicraft.c:762` `static void col_recompute(int x, int y)`
+- `col_top_at` (function) `minicraft.c:787` `static int col_top_at(int x, int y)`
+- `light_recompute_col` (function) `minicraft.c:794` `static void light_recompute_col(int x, int y)`
+- `get_b` (function) `minicraft.c:823` `static unsigned char get_b(int x, int y, int z)`
+- `set_b` (function) `minicraft.c:833` `static void set_b(int x, int y, int z, unsigned char b)`
+- `set_b_raw` (function) `minicraft.c:849` `static void set_b_raw(int x, int y, int z, unsigned char b)`
+- `sky_light` (function) `minicraft.c:860` `static float sky_light(int x, int y, int z)` -- world_dirty = 1; } static void set_b_raw(int x, int y, int z, unsigned char b) { int s; if (z < 0 || z >= MC_H)...
+- `is_solid` (function) `minicraft.c:870` `static int is_solid(unsigned char b)`
+- `in_water_at` (function) `minicraft.c:873` `static int in_water_at(float x, float y, float z)`
+- `is_visible` (function) `minicraft.c:878` `static int is_visible(unsigned char b)`
+- `hash2` (function) `minicraft.c:882` `static unsigned int hash2(int x, int y)`
+- `hash2_seed` (function) `minicraft.c:889` `static unsigned int hash2_seed(int x, int y, unsigned int seed)`
+- `mc_smoothstep` (function) `minicraft.c:898` `static float mc_smoothstep(float t)`
+- `biome_fdiv` (function) `minicraft.c:905` `static int biome_fdiv(int v, int c)` -- Voronoi biome lattice: floor division so negatives land right.
+- `voro_site` (function) `minicraft.c:920` `static void voro_site(int cx, int cy, unsigned int seed, int cell,
+    int *sx, int *sy)`
+- `biome_voro` (function) `minicraft.c:928` `static int biome_voro(int x, int y, unsigned int seed, int cell,
+    int ox, int oy, unsigned int...`
+- `biome_desert` (function) `minicraft.c:952` `static int biome_desert(int x, int y, unsigned int seed)`
+- `biome_snow` (function) `minicraft.c:956` `static int biome_snow(int x, int y, unsigned int seed)`
+- `is_cave` (function) `minicraft.c:960` `static int is_cave(int x, int y, int z, unsigned int seed)`
+- `ground_h_seed` (function) `minicraft.c:968` `static int ground_h_seed(int x, int y, unsigned int seed)`
+- `inv_add` (function) `minicraft.c:990` `static int inv_add(int b, int n)`
+- `inv_remove` (function) `minicraft.c:1004` `static int inv_remove(int b, int n)`
+- `decorate_column` (function) `minicraft.c:1054` `static void decorate_column(int x, int y, unsigned int seed)`
+- `gen_terrain_chunk` (function) `minicraft.c:1093` `static void gen_terrain_chunk(int slot)`
+- `decorate_chunk` (function) `minicraft.c:1102` `static void decorate_chunk(int slot)`
+- `ensure_around_px` (function) `minicraft.c:1115` `static void ensure_around_px(float px, float py)` -- Keep a (2R+1)^2 ring of terrain around the player, an inner ring decorated, drop the rest (dirty chunks hit disk first).
+- `ensure_around` (function) `minicraft.c:1149` `static void ensure_around(void)`
+- `new_world` (function) `minicraft.c:1154` `static void new_world(unsigned int seed)` -- save_chunk_file(i); ch_used[i] = 0; if (ch_cache == i) ch_cache = -1; } } world_max_recompute(); } static void...
+- `mob_spawn_one` (function) `minicraft.c:1250` `static void mob_spawn_one(Pig *m, int id, int hp, long now)`
+- `pig_collides` (function) `minicraft.c:1302` `static int pig_collides(float x, float y, float z)`
+- `creeper_explode` (function) `minicraft.c:1316` `static void creeper_explode(Pig *c, long now)`
+- `creep_sense` (function) `minicraft.c:1384` `static void creep_sense(Pig *c, float *pdx, float *pdy, float *pdz, float *pd3)` -- Creeper perception in 3D: planar delta, eye-height delta and full distance.
+- `creep_has_los` (function) `minicraft.c:1396` `static int creep_has_los(Pig *c)` -- Voxel line of sight between creeper eyes and player eyes, sampled every half block.
+- `creep_separate` (function) `minicraft.c:1420` `static void creep_separate(Pig *p, int id, float dt)` -- Herd separation: creepers inside MC_CREEP_SEP_D push apart so the pack * never stacks on one tile and every one of...
+- `tick_mob` (function) `minicraft.c:1445` `static void tick_mob(Pig *p, int id, float dt, long now)`
+- `tick_pigs` (function) `minicraft.c:1568` `static void tick_pigs(float dt, long now)`
+- `face_color` (function) `minicraft.c:1576` `static unsigned char face_color(unsigned char b, int face)`
+- `sky_color` (function) `minicraft.c:1625` `static unsigned char sky_color(float dz, float sun_dot, int x, int y, float tsec)`
+- `shade_block` (function) `minicraft.c:1658` `static unsigned char shade_block(unsigned char b, int face, int bx, int by, int bz,
+             ...`
+- `cast_ray` (function) `minicraft.c:1715` `static RayHit cast_ray(float ox, float oy, float oz, float dx, float dy, float dz, float maxd)`
+- `eye_z` (function) `minicraft.c:1806` `static float eye_z(void)`
+- `mc_glyph` (function) `minicraft.c:1873` `static int mc_glyph(char ch)`
+- `mc_pixel` (function) `minicraft.c:1881` `static void mc_pixel(int x, int y, unsigned char c)`
+- `mc_text` (function) `minicraft.c:1887` `static void mc_text(int x, int y, const char *s, unsigned char fg)`
+- `mc_text_bg` (function) `minicraft.c:1900` `static void mc_text_bg(int x, int y, const char *s, unsigned char fg, unsigned char bg)`
+- `mc_block_name` (function) `minicraft.c:1913` `static const char *mc_block_name(unsigned char b)`
+- `mc_facing` (function) `minicraft.c:1933` `static char mc_facing(void)`
+- `cam_build` (function) `minicraft.c:1948` `static void cam_build(void)`
+- `render_terrain` (function) `minicraft.c:1966` `static void render_terrain(RayHit tgt, float cyaw, float syaw, float cpit,
+                      ...`
+- `mob_pixel` (function) `minicraft.c:2001` `static unsigned char mob_pixel(Pig *m, int id, int px, int py, int x0, int x1, int y0, int y1)`
+- `render_mob_array` (function) `minicraft.c:2035` `static void render_mob_array(Pig *arr, int n, float fx, float fy, float fz,
+    float rx, float r...`
+- `render_pigs` (function) `minicraft.c:2086` `static void render_pigs(float cyaw, float syaw, float cpit, float spit, float ez)`
+- `render_frame` (function) `minicraft.c:2094` `static void render_frame(void)`
+- `sc_hist_push` (function) `minicraft.c:2207` `static void sc_hist_push(unsigned char b)`
+- `poll_kbd` (function) `minicraft.c:2218` `static void poll_kbd(void)`
+- `player_collides` (function) `minicraft.c:2411` `static int player_collides(float x, float y, float z)`
+- `move_x` (function) `minicraft.c:2435` `static void move_x(float nx)`
+- `move_y` (function) `minicraft.c:2440` `static void move_y(float ny)`
+- `move_z_abs` (function) `minicraft.c:2445` `static MoveResult move_z_abs(float nz)`
+- `block_intersects_player` (function) `minicraft.c:2460` `static int block_intersects_player(int bx, int by, int bz)`
+- `try_autostep` (function) `minicraft.c:2469` `static void try_autostep(float tx, float ty)`
+- `hurt` (function) `minicraft.c:2480` `static void hurt(int dmg, const char *why)`
+- `tick_player` (function) `minicraft.c:2505` `static void tick_player(float dt)`
+- `tick_water` (function) `minicraft.c:2604` `static void tick_water(long now)`
+- `tick_hunger` (function) `minicraft.c:2652` `static void tick_hunger(long now)`
+- `goal_text` (function) `minicraft.c:2664` `static const char *goal_text(void)`
+- `tick_goals` (function) `minicraft.c:2675` `static void tick_goals(void)`
+- `tick_discover` (function) `minicraft.c:2686` `static void tick_discover(long now)`
+- `tick_interact` (function) `minicraft.c:2724` `static void tick_interact(void)`
+- `mc_crc32` (function) `minicraft.c:2975` `static uint32_t mc_crc32(const void *data, size_t len, uint32_t crc)`
+- `save_compute_crc` (function) `minicraft.c:2988` `static uint32_t save_compute_crc(const SaveHeader *hd)`
+- `chunk_path` (function) `minicraft.c:2994` `static void chunk_path(int cx, int cy, char *out, size_t n)`
+- `save_chunk_file` (function) `minicraft.c:2998` `static int save_chunk_file(int slot)`
+- `load_chunk_file` (function) `minicraft.c:3030` `static int load_chunk_file(int slot, int cx, int cy)`
+- `save_validate_loaded` (function) `minicraft.c:3112` `static int save_validate_loaded(void)`
+- `load_reset_runtime` (function) `minicraft.c:3131` `static void load_reset_runtime(void)`
+- `carve_blob` (function) `minicraft.c:3164` `static void carve_blob(const unsigned char *blob)` -- Import a 64x64x32 legacy blob into chunks (0..3, 0..3), then dirty so * region files persist it.
+- `load_world_legacy` (function) `minicraft.c:3193` `static int load_world_legacy(FILE *f)` -- Legacy raw save: fixed old_inv[12] layout is fragile if B_COUNT grows; * kept read-only for ancient saves, never...
+- `load_apply_player` (function) `minicraft.c:3231` `static void load_apply_player(const SaveHeader *hd)`
+- `load_world_v3` (function) `minicraft.c:3250` `static int load_world_v3(FILE *f, SaveHeader *hd)`
+- `load_world_v2` (function) `minicraft.c:3290` `static int load_world_v2(FILE *f, SaveHeader *hd)`
+- `load_world` (function) `minicraft.c:3327` `static int load_world(void)`
+- `selftest` (function) `minicraft.c:3401` `static int selftest(void)`
+- `census` (function) `minicraft.c:3662` `static int census(void)` -- 128x128 columns (64 biome cells): a 64-wide patch covers too few * 16-block biome cells and the desert rate...
+- `dumpstats` (function) `minicraft.c:3726` `static int dumpstats(void)`
+- `title_menu` (function) `minicraft.c:3810` `static int title_menu(int have_save, int *seed_io)`
+- `pause_menu` (function) `minicraft.c:3978` `static int pause_menu(int *seed_io)` -- Pause menu on ESC (Alt+F4 still kills the process kernel-side): * 0 = resume, 1 = new world with *seed_io, 2 = save...
+- `main` (function) `minicraft.c:4151` `int main(int argc, char **argv)`
